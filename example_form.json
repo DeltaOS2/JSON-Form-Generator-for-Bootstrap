@@ -1,0 +1,142 @@
+{
+    "name": "formName",
+    "description": "A simple form example.",
+    "method": "post",
+    "enctype": "multipart/form-data",
+    "action": "?",
+    "class" : "needs-validation",
+    "novalidate": true,
+    "properties": {
+      "formRowOpen": {
+        "type": "div",
+        "open": true,
+        "class": "row justify-content-center mt-5"
+      },
+      "formColOpen": {
+        "type": "div",
+        "open": true,
+        "class": "col-6"
+      },
+      "firstName": {
+        "type": "text",
+        "label": "First name",
+        "name":"firstName",
+        "value": "test",
+        "required": true,
+        "onchange":"console.log(this.value)",
+        "aria-label": false,
+        "class": "form-control mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-2"
+      },
+      "lastName": {
+        "type": "text",
+        "label": "Last name",
+        "name":"lastName",
+        "disabled": true,
+        "class": "form-control mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-2"
+      },
+      "age": {
+        "type": "number",
+        "label": "Age",
+        "name":"age",
+        "class": "form-control mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-2"
+      },
+      "bio": {
+        "id": "bio",
+        "type": "text",
+        "label": "Bio",
+        "name":"bio",
+        "placeholder":"Biography",
+        "class": "form-control",
+        "labelClass": "form-label",
+        "divClass": "mb-2"
+      },
+      "password": {
+        "type": "password",
+        "label": "Password",
+        "name":"password",
+        "min": 3,
+        "class": "form-control mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-2",
+        "required": true
+      },
+      "language": {
+        "type": "select",
+        "label": "Language",
+        "name": "lang",
+        "options":
+            {"en": ["English", false],
+            "fa": ["Farsi", false],
+            "de": ["German", true]
+            },
+        "class": "form-select mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-3"
+      },
+      "radio1": {
+        "type": "radio",
+        "label": "Radio Eins",
+        "name": "du",
+        "id": "r1",
+        "value": "eins",
+        "class": "form-check-input",
+        "labelClass": "form-check-label",
+        "divClass": "mb-1"
+      },
+      "radio2": {
+        "type": "radio",
+        "label": "Radio Zwei",
+        "name": "du",
+        "value": "zwei",
+        "class": "form-check-input",
+        "labelClass": "form-check-label",
+        "divClass": "mb-3"
+      },
+      "checkbox1": {
+        "type": "checkbox",
+        "label": "Checkbox Eins",
+        "name": "du",
+        "id": "check1",
+        "value": "eins",
+        "class": "form-check-input",
+        "labelClass": "form-check-label",
+        "divClass": "mb-3",
+        "checked": true
+      },
+      "textarea": {
+        "type": "textarea",
+        "label": "Tell your story",
+        "name": "story",
+        "class": "form-control mt-2",
+        "labelClass": "form-label w-100",
+        "divClass": "mb-3"
+      },
+      "clear": {
+        "type": "button",
+        "label": "Clear Form",
+        "name":"clear",
+        "onclick": "form.reset()",
+        "class": "btn btn-danger"
+         },
+      "submit": {
+        "type": "submit",
+        "label": "Send Form",
+        "name":"submit",
+        "class": "btn btn-success mx-2"
+      },
+      "formColClose": {
+        "type": "div",
+        "open": false
+      },
+      "formRowClose": {
+        "type": "div",
+        "open": false
+      }
+    }
+  }
